@@ -1,0 +1,51 @@
+﻿@using Novus_Catalog.Models
+@model Users
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Student Record Database</title>
+    <!-- Bootstrap -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="~/css/style.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+    @using (Html.BeginForm("User", "Login", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+
+        <div class="container">
+
+            <h3 id="loginHeading">Login</h3>
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger", style = "color:red" })
+
+            <div id="loginFields" class="row">
+                <div class="span3">
+                    <h4 class="loginLabel">
+                        Account Type
+                    </h4>
+
+                    @Html.DropDownListFor(m => m.account, new List<SelectListItem>
+                        { new SelectListItem { Text="Administrator", Value="Administrator" },
+                            new SelectListItem { Text="Mentor", Value="Mentor" }}, "--Please select--",
+                            new { @class = "input-block-level" })
+
+                </div>
+                <div class="span3 offset1">
+                    <h4 class="loginLabel">
+                        Password
+                    </h4>
+                    @Html.PasswordFor(model => model.password)
+                </div>
+            </div>
+            <button id="loginButton" class="btn btn-custom btn-large" type="submit">
+                Login
+            </button>
+        </div>
+    }
+</body>
+</html>

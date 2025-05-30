@@ -1,0 +1,120 @@
+﻿@model Novus_Catalog.Models.Students
+
+    <div class="row">
+        <div class="span2">First Name: *</div>
+        <div class="span6">
+            @Html.ValidationMessageFor(model => model.sfirstname, "", new { @style = "color:red" })
+            <div id="fName-group" class="control-group">
+                <div class="controls">
+                    @Html.TextBoxFor(model => model.sfirstname)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2">Last Name: *</div>
+        <div class="span6">
+            @Html.ValidationMessageFor(model => model.slastname, "", new { @style = "color:red" })
+            <div id="lName-group" class="control-group">
+                <div class="controls">
+                    @Html.TextBoxFor(model => model.slastname)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2">Street Address: </div>
+        <div class="span5">
+            @Html.EditorFor(model => model.address)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2">City: </div>
+        <div class="span3">
+            @Html.TextBoxFor(model => model.city)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2">Department: </div>
+        <div class="span2">
+            @Html.DropDownListFor(model => model.department, new List<SelectListItem>
+            { new SelectListItem { Text="Beni", Value="BNI" },
+              new SelectListItem { Text="Chuquisaca", Value="CHQ" },
+              new SelectListItem { Text="Cochabamba", Value="CBB" },
+              new SelectListItem { Text="La Paz", Value="LPZ" },
+              new SelectListItem { Text="Oruro", Value="ORU" },
+              new SelectListItem { Text="Pando", Value="PND" },
+              new SelectListItem { Text="Potosí", Value="PSI" },
+              new SelectListItem { Text="Santa Cruz", Value="SCZ" },
+              new SelectListItem { Text="Tarija", Value="TJA" }}, "--Please select--",
+             new { @class = "input-block-level" })
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2">Gender: *</div>
+        <div class="span2">
+            @Html.ValidationMessageFor(model => model.gender, "", new { @style = "color:red" })
+            @Html.DropDownListFor(model => model.gender, new List<SelectListItem>
+            { new SelectListItem { Text="Male", Value="Male" },
+              new SelectListItem { Text="Female", Value="Female" }}, "--Please select--",
+                     new { @class = "input-block-level" })
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2">School: </div>
+        <div class="span5">
+            @Html.EditorFor(model => model.school)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2">Parent's First Name: </div>
+        <div class="span3">
+            @Html.EditorFor(model => model.pfirstname)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2">Parent's Last Name: </div>
+        <div class="span3">
+            @Html.EditorFor(model => model.plastname)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2">Phone Number: </div>
+        <div class="span3">
+            @Html.EditorFor(model => model.phoneNumber)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2">Date Enrolled: *</div>
+        <div class="span6">
+            @Html.ValidationMessageFor(model => model.dateEnrolled, "", new { @style = "color:red" })
+            <div id="date-group" class="control-group">
+                <div class="controls">
+                    @Html.TextBoxFor(model => model.dateEnrolled, "", new { @class = "date-picker" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2">Attendance: *</div>
+        <div class="span2">
+            @Html.ValidationMessageFor(model => model.attendance, "", new { @style = "color:red" })
+            @Html.DropDownListFor(model => model.attendance, new List<SelectListItem>
+            { new SelectListItem { Text="Never", Value="Never" },
+                new SelectListItem { Text="Rare", Value="Rare" },
+                new SelectListItem { Text="Occasional", Value="Occasional" },
+                new SelectListItem { Text="Frequent", Value="Frequent" }}, "--Please select--",
+                        new { @class = "input-block-level" })
+        </div>
+    </div>

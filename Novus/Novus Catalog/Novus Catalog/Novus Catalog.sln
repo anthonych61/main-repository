@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novus Catalog", "Novus Catalog\Novus Catalog.csproj", "{928C8781-ACF2-4F51-BBF1-89874EE51DA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovusCatalogTests", "NovusCatalogTests\NovusCatalogTests.csproj", "{8CC417D5-63C8-4D02-9A62-396122F96523}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{928C8781-ACF2-4F51-BBF1-89874EE51DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928C8781-ACF2-4F51-BBF1-89874EE51DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928C8781-ACF2-4F51-BBF1-89874EE51DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928C8781-ACF2-4F51-BBF1-89874EE51DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CC417D5-63C8-4D02-9A62-396122F96523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC417D5-63C8-4D02-9A62-396122F96523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC417D5-63C8-4D02-9A62-396122F96523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC417D5-63C8-4D02-9A62-396122F96523}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB0B07FB-446F-4EA7-8604-9C15CACD4BFB}
+	EndGlobalSection
+EndGlobal

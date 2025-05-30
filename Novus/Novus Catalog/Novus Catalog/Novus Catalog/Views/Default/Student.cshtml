@@ -1,0 +1,120 @@
+﻿@{
+    Layout = "~/Views/Shared/_header.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="mobileButtons" class="row buttonDiv visible-phone">
+        <div class="btn-group">
+            @{
+                if (Session["ACCOUNT"].Equals("Administrator"))
+                {
+                    <!-- <button class='btn' id='deleteMobile' onclick='launchDeleteModal();' disabled='true'> <i class='icon-trash icon-black'></i> <br /> Delete Students</button> -->
+                    <!-- <button class='btn' id='reportMobile' onclick='launchReportModal();' disabled='true'><i class='icon-download icon-black'></i> <br /> Generate Report</button> -->;
+                }
+            }
+        </div>
+    </div>
+
+    <div id="desktopButtons" class="row buttonDiv hidden-phone">
+        <div class="span12">
+            <div class="row">
+                <div class="span2">
+                    <button class="btn btn-custom" onclick="location.href='@Url.Action("Student", "Create")'"><i class="icon-plus icon-white"></i> Add New Student</button>
+                </div>
+                <div id="desktopButtons" class="span4 offset6">
+                    <div class="btn-group">
+                        @{
+                            if (Session["ACCOUNT"].Equals("Administrator"))
+                            {
+                                <button class='btn' id='deleteDesktop' onclick='launchDeleteModal();' disabled><i class='icon-trash icon-black'></i> Delete Students</button>
+                                <button class='btn' id='reportDesktop' onclick='launchReportModal();' disabled><i class='icon-download icon-black'></i> Generate Report</button>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='recordTable' class='row hidden-phone'>
+        <div class='span12'>
+            <table class='table pull-center table-striped table-bordered'>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Date Enrolled</th>
+                    <th>Attends</th>
+                    <th class='centerCol'>Edit</th>
+                </tr>
+                @foreach (var d in Model)
+                {
+                    <tr>
+                        <td class='centerCol'>
+                            <input type='checkbox' class='desktopCheckbox' name='student_D_@d.sid'
+                                   id='student_D_@d.sid' value='@d.sid' onclick='checkAction(this,@d.sid);' />
+                        </td>
+                        <td>@d.sfirstname @d.slastname</td>
+                        <td>@d.gender</td>
+                        <td>@d.dateEnrolled</td>
+                        <td>@d.attendance</td>
+                        <td class='centerCol'>
+                            <button class='btn btn-custom centerCol' onclick="location.href='@Url.Action("Student", "Edit", new { id = @d.sid })'">
+                                <i class='icon-pencil icon-white'></i> Edit
+                            </button>
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+    </div>
+
+    <div id='recordTableMobile' class='row visible-phone'>
+        <div class='span12'>
+            <table class='table table-striped table-bordered'>
+                <tr>
+                    <th class='centerCol'>Select</th>
+                    <th>Student</th>
+                    <th class='centerCol'>Edit</th>
+                </tr>
+                @foreach (var d in Model)
+                {
+                    <tr>
+                        <td class='centerCol'>
+                            <input type='checkbox' class='mobileCheckbox' name='student_M_@d.sid'
+                                   id='student_M_@d.sid' value='@d.sid' onclick='checkAction(this,@d.sid);' />
+                        </td>
+                        <td>
+                            <p>
+                                <b>Name</b><br />
+                                @d.sfirstname @d.slastname
+                            </p>
+                            <p>
+                                <b>Gender</b><br />
+                                @d.gender
+                            </p>
+                            <p>
+                                <b>Enrolled</b><br />
+                                @d.dateEnrolled
+                            </p>
+                            <p>
+                                <b>Attendance</b><br />
+                                @d.attendance
+                            </p>
+                        </td>
+                        <td class='centerCol'>
+                            <button class='btn btn-custom centerCol' onclick="location.href='@Url.Action("Student", "Edit", new { id = @d.sid })'">
+                                <i class='icon-pencil icon-white'></i> Edit
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+

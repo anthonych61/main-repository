@@ -1,0 +1,248 @@
+﻿@*@{ 
+    if (!string.IsNullOrEmpty(Session["ACCOUNT"] as string)) {
+        Response.Redirect("Login/User");
+    }
+}*@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Novus Catalog System</title>
+        <meta charset='utf-8'>
+        <script type="text/javascript">
+		        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			        var msViewportStyle = document.createElement("style");
+                    msViewportStyle.appendChild(
+                        document.createTextNode(
+                            @*-ms-viewport{width:auto!important}"*@
+                        )
+                    );
+			        document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+		        }
+        </script>
+
+        <style type="text/css">
+
+            #contentWrapper {
+                width: 940px;
+                margin: 0 auto;
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="~/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+        <link href="~/css/style.css" rel="stylesheet" media="screen" />
+        <link href="~/css/ui-lightness/jquery-ui-1.10.2.custom.min.css" rel="stylesheet" media="screen" />
+
+        <link rel="shortcut-icon" href="~/img/favicon.ico" />
+    </head>
+    <body>
+        <script src="~/js/jquery-ui-1.10.2.custom/jquery-latest.js"></script>
+        <script src="~/js/jquery-ui-1.10.2.custom/jquery-ui-1.10.2.custom.min.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            var actionArray = [];
+
+            function launchReportModal() {
+                $("#studentReportModal").modal();
+                $("#reportItems").val(actionArray.toString());
+                console.log($("#reportItems").val());
+            }
+
+            function launchDeleteModal() {
+                $("#deleteStudentModal").modal();
+                $("#deleteItems").val(actionArray.toString());
+                console.log($("#deleteItems").val());
+            }
+
+            function deleteStudents() {
+                console.log("deleteStudents()");
+                console.log($("#deleteItems").val());
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Remove/Delete/" + $("#deleteItems").val(),
+                    contentType: "application/json;charset=UTF-8",
+                    dataType: "json",
+                    success: function (response) {
+                        window.location.href = response.redirectToUrl;
+                    }, complete: function () {
+                        $("#deleteStudentModal").modal("hide");
+                    }
+                });
+                console.log("The delete completed");
+            }
+
+            function exportStudents() {
+                console.log("exportStudents()");
+                console.log($("#reportItems").val());
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Report/GenerateReport/" + $("#reportItems").val(),
+                    contentType: "application/json;charset=UTF-8",
+                    dataType: "json",
+                    success: function (result) {                                                
+                        if (result == "Success") {
+                            location.href = '@Url.Action("DownloadFile","Report")';
+                        }
+                    }
+                });
+                console.log("The export completed");
+            }
+
+            function checkAction(thisCheckbox, SID) {
+                var otherVersionString = "";
+                var arrayIndex = jQuery.inArray(SID, actionArray); // Position within the current array
+                console.log("-----checkAction()-----");
+                console.log("checkAction: current checkbox: " + $(thisCheckbox).attr("id"));
+                if ($(thisCheckbox).hasClass("desktopCheckbox")) {
+                    otherVersionString = "#student_M_" + SID;
+                }
+                else {
+                    otherVersionString = "#student_D_" + SID;
+                }
+                console.log("checkAction: the other checkbox is " + otherVersionString);
+
+                if ($(thisCheckbox).is(":checked")) {
+                    if (arrayIndex == -1) {
+                        actionArray.push(SID);
+                    }
+                    console.log("checkAction: Adding " + SID + " to the array and checking the relevant checkbox.");
+                    $(otherVersionString).attr('checked', true);
+                }
+                else {
+                    var length = actionArray.length;
+                    console.log("checkAction: removing " + SID + " from the array.");
+                    if (arrayIndex != -1) {
+                        actionArray.splice(arrayIndex, 1);
+                    }
+                    $(otherVersionString).attr('checked', false);
+                }
+                toggleControls();
+                console.log("-----checkAction() end -----\n");
+            }
+
+            function toggleControls() {
+                console.log("--toggleControls()--");
+                if (actionArray.length) {
+                    console.log("There are elements in the array; enabling the buttons");
+                    $("#deleteDesktop").removeAttr("disabled", "disabled");
+                    $("#reportDesktop").removeAttr("disabled", "disabled");
+                    $("#deleteMobile").removeAttr("disabled", "disabled");
+                    $("#reportMobile").removeAttr("disabled", "disabled");
+                }
+                else {
+                    console.log("The array is empty; disabling the buttons");
+                    $("#deleteDesktop").attr("disabled", "disabled");
+                    $("#reportDesktop").attr("disabled", "disabled");
+                    $("#deleteMobile").attr("disabled", "disabled");
+                    $("#reportMobile").attr("disabled", "disabled");
+                }
+                console.log("--toggleControls() end--");
+            }
+
+            $(function () {
+                $("#oldMentorTogglePwd").click(function () {
+                    $(this).toggleClass("fa-eye fa-eye-slash");
+                    var type = $(this).hasClass("fa-eye-slash") ? "text" : "password";
+                    $("#oldMentorPwd").attr("type", type);
+                });
+
+                $("#newMentorTogglePwd").click(function () {
+                    $(this).toggleClass("fa-eye fa-eye-slash");
+                    var type = $(this).hasClass("fa-eye-slash") ? "text" : "password";
+                    $("#newMentorPwd").attr("type", type);
+                });
+
+                $("#oldAdminTogglePwd").click(function () {
+                    $(this).toggleClass("fa-eye fa-eye-slash");
+                    var type = $(this).hasClass("fa-eye-slash") ? "text" : "password";
+                    $("#oldAdminPwd").attr("type", type);
+                });
+
+                $("#newAdminTogglePwd").click(function () {
+                    $(this).toggleClass("fa-eye fa-eye-slash");
+                    var type = $(this).hasClass("fa-eye-slash") ? "text" : "password";
+                    $("#newAdminPwd").attr("type", type);
+                });
+            });
+
+        </script>
+        <div class="container">
+            <div id="header">
+                <a href="index.php"><h3 class="hidden-phone">Novus Catalog System</h3></a>
+                <div class="rightNav hidden-phone">
+                    <div class="btn-group">
+                        @{
+                            if (Session["ACCOUNT"] as string == "Administrator")
+                            {
+                                <button class='btn' onclick="location.href='@Url.Action("Edit", "User")'">Edit Passwords</button>
+                            }
+
+                        }
+                        <button class="btn" onclick="location.href='@Url.Action("Index", "Logout")'">Logout</button>
+                    </div>
+                </div>
+                @*<div id="loginMobile" class="rightNav visible-phone">
+                    <div class="btn-group">
+                        @{
+                            if (Session["ACCOUNT"] as string == "Administrator")
+                            {
+                                <button class='btn' onclick="parent.location ='changePasswords.php'"> Edit Passwords</button>
+                            }
+
+                        }
+                         <button class="btn" onclick="parent.location='logout.php'">Logout</button>
+                    </div>
+                </div>*@
+                @{
+                    if (Session["ACCOUNT"] as string == "Administrator")
+                    {
+                        <h4 class='hidden-phone'>Admin</h4>
+                    }
+                    else
+                    {
+                        <h4 class='hidden-phone'>Mentor</h4>
+                    }
+                }
+            </div>
+        </div>
+        <form id="deleteStudent" method="get">
+            <div id="deleteStudentModal" class="modal hide fade">
+                <input type="hidden" name="deleteItems" id="deleteItems" />
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>Delete Student Records</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to delete the selected student records?</p>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn" value="Confirm" onclick="deleteStudents();" />
+                    <input type="button" class="btn" data-dismiss="modal" value="Cancel" />
+                </div>
+            </div>
+        </form>
+
+        <form id="studentReport" method="get">
+            <div id="studentReportModal" class="modal hide fade">
+                <input type="hidden" name="reportItems" id="reportItems" />
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>Create A Report</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to create this report?</p>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn" value="Confirm" onclick="exportStudents();" />
+                    <input type="button" class="btn" data-dismiss="modal" value="Cancel" />
+                </div>
+            </div>
+        </form>
+       
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+</body>
+</html>

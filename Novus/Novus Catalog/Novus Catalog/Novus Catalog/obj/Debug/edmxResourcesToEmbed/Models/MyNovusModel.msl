@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mynovusModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="STUDENTs">
+      <EntityTypeMapping TypeName="my.novusModel.STUDENT">
+        <MappingFragment StoreEntitySet="STUDENT">
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="SFIRSTNAME" ColumnName="SFIRSTNAME" />
+          <ScalarProperty Name="SLASTNAME" ColumnName="SLASTNAME" />
+          <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="DEPARTMENT" ColumnName="DEPARTMENT" />
+          <ScalarProperty Name="SCHOOL" ColumnName="SCHOOL" />
+          <ScalarProperty Name="PFIRSTNAME" ColumnName="PFIRSTNAME" />
+          <ScalarProperty Name="PLASTNAME" ColumnName="PLASTNAME" />
+          <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+          <ScalarProperty Name="DATE_ENROLLED" ColumnName="DATE_ENROLLED" />
+          <ScalarProperty Name="ATTENDANCE" ColumnName="ATTENDANCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="STUDENT_DELETED">
+      <EntityTypeMapping TypeName="my.novusModel.STUDENT_DELETED">
+        <MappingFragment StoreEntitySet="STUDENT_DELETED">
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="SFIRSTNAME" ColumnName="SFIRSTNAME" />
+          <ScalarProperty Name="SLASTNAME" ColumnName="SLASTNAME" />
+          <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="DEPARTMENT" ColumnName="DEPARTMENT" />
+          <ScalarProperty Name="SCHOOL" ColumnName="SCHOOL" />
+          <ScalarProperty Name="PFIRSTNAME" ColumnName="PFIRSTNAME" />
+          <ScalarProperty Name="PLASTNAME" ColumnName="PLASTNAME" />
+          <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+          <ScalarProperty Name="DATE_ENROLLED" ColumnName="DATE_ENROLLED" />
+          <ScalarProperty Name="ATTENDANCE" ColumnName="ATTENDANCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERS">
+      <EntityTypeMapping TypeName="my.novusModel.USER">
+        <MappingFragment StoreEntitySet="USERS">
+          <ScalarProperty Name="ACCOUNT" ColumnName="ACCOUNT" />
+          <ScalarProperty Name="PASS" ColumnName="PASS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

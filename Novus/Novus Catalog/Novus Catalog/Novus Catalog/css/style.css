@@ -1,0 +1,149 @@
+#recordTableMobile td.centerCol {
+	vertical-align: middle;
+}
+
+body {
+	background: url("../img/bg.png") repeat-x #f7f7f7;
+}
+
+.subHeading  h4{
+	margin: 40px 0;
+	padding: 0;
+}
+
+.subHeading {
+	clear: both;
+}
+
+#loginHeading {
+	margin-top: 140px;
+	padding: 0;
+}
+
+h4#warning {
+	color: red;
+	line-height:40px;
+	font-weight: normal;
+}
+
+h4.loginLabel {
+	color: gray;
+	margin-top:40px;
+}
+
+#loginButton {
+	margin-top: 40px;
+}
+
+
+/****** NAVBAR ******/
+
+#header h3 {
+	float: left;
+	margin: 0 0 0 10px;
+}
+
+#header h3, #header h4 {
+	color: black;
+	font-weight: normal;
+	line-height: 100px;
+}
+
+#header h4 {
+	float: right;
+	margin: 0;
+}
+
+#header a {
+	color: black;
+	text-decoration: none;
+}
+
+a.logo {
+	background: url("../img/udi-small.png") no-repeat;
+	background-position: 0 5px;
+	height:100px;
+	display: block;
+	float: left;
+}
+
+a#logoDesktop {
+	width: 160px;
+}
+
+a#logoMobile {
+	width: 70px;
+}
+
+.rightNav {
+	float:right;
+	margin-left: 10px;
+	position: relative;
+	line-height: 100px;
+}
+
+/****** END NAVBAR ******/
+
+
+/****** BUTTONS ******/
+
+.buttonDiv {
+	clear: both;
+}
+	
+.buttonDiv button {
+	margin: 40px 0;
+}
+
+#mobileButtons button{
+	width: 33.33%;
+	height: 70px;
+}
+
+#mobileButtons .btn-group {
+	display: inherit;
+}
+
+button {
+	white-space: normal;
+}
+
+#loginMobile button {
+	height: 60px;
+	width: 92px;
+}
+
+#desktopButtons .btn-group {
+	float: right;
+}
+ .btn-custom {
+
+  background-color: hsl(360, 100%, 31%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0505", endColorstr="#9e0000");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ff0505), to(#9e0000));
+  background-image: -moz-linear-gradient(top, #ff0505, #9e0000);
+  background-image: -ms-linear-gradient(top, #ff0505, #9e0000);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff0505), color-stop(100%, #9e0000));
+  background-image: -webkit-linear-gradient(top, #ff0505, #9e0000);
+  background-image: -o-linear-gradient(top, #ff0505, #9e0000);
+  background-image: linear-gradient(#ff0505, #9e0000);
+  border-color: #9e0000 #9e0000 hsl(360, 100%, 26%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+.btn-custom:hover, .btn-custom:active, .btn-custom.active, .btn-custom.disabled, .btn-custom[disabled] {
+color: #ffffff;
+background-color: hsl(360, 100%, 31%);
+}
+/****** END BUTTONS ******/
+
+
+/****** TABLE ******/
+
+td.centerCol, th.centerCol {
+	text-align: center;
+}
+
+/****** END TABLE ******/
