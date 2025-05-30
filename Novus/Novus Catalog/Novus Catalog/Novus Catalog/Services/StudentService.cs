@@ -7,7 +7,7 @@ using Novus_Catalog.Repository;
 
 namespace Novus_Catalog.Services
 {
-    public class StudentService
+    public class StudentService : IStudentService
     {
         private StudentRepository studentRepository = new StudentRepository();
 
@@ -19,6 +19,27 @@ namespace Novus_Catalog.Services
         {
             studentRepository.Save(student);
         }
+        public void Update(Students student)
+        {
+            studentRepository.Update(student);
+        }
+        public Students FindById(int? id)
+        {
+            return studentRepository.FindById(id);
+        }
+        public Students Find(int? id)
+        {
+            return studentRepository.Find(id);
+        }
 
+        public void Delete(int[] removedItems) 
+        {
+            studentRepository.RemoveRecords(removedItems);
+        }
+
+        public void MoveOldRecords(int[] recordItems)
+        {
+            studentRepository.MoveOldRecords(recordItems);
+        }
     }
 }

@@ -30,13 +30,14 @@ namespace Novus_Catalog.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Student([Bind(Include = "null, sfirstname, slastname, gender, address, city, department, school, pfirstname, plastname, phoneNumber, dateEnrolled, attendance, createdDateTime, modifiedDateTime")]Students student)
         {
-            try
-            {
-                StudentService  studentService = new StudentService();
+            StudentService studentService = new StudentService();
 
-                DateTime currentTime = DateTime.Now;
-                student.createdDateTime = currentTime;
-                student.modifiedDateTime = currentTime;
+            DateTime currentTime = DateTime.Now;
+            student.createdDateTime = currentTime;
+            student.modifiedDateTime = currentTime;
+
+            try
+            {               
 
                 if (ModelState.IsValid)
                 {                   

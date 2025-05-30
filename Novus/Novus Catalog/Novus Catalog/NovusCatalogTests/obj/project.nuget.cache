@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GtgHIFSvtw8=",
+  "dgSpecHash": "4r5sn6dW2y8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\sandbox-repository\\sandbox-repository\\Novus\\Novus Catalog\\Novus Catalog\\NovusCatalogTests\\NovusCatalogTests.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\NovusCatalogTests\\NovusCatalogTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",

@@ -1,17 +1,19 @@
 ﻿using Novus_Catalog.DAL;
 using Novus_Catalog.Models;
 using Novus_Catalog.Repository;
+using Novus_Catalog.Services;
 using System;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Security.Cryptography.X509Certificates;
 using System.Web.Mvc;
 
 namespace Novus_Catalog.Controllers
 {
     public class EditController : Controller
     {
-        private NovusContext db = new NovusContext();
+        StudentService studentService = new StudentService();
 
         [HttpPost]
         public ActionResult User()
@@ -25,14 +27,14 @@ namespace Novus_Catalog.Controllers
         /// </summary>
         public ActionResult Student(int? id)
         {
-            var std = db.Students.Where(s => s.sid == id).FirstOrDefault();
+            var std = studentService.FindById(id);
 
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            Students student = db.Students.Find(id);
+            Students student = studentService.Find(id);
 
             if (student == null)
             {
@@ -47,15 +49,13 @@ namespace Novus_Catalog.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Student([Bind(Include = "sid, sfirstname, slastname, gender, address, city, department, school, pfirstname, plastname, phoneNumber, dateEnrolled, attendance, createdDateTime, modifiedDateTime")] Students student)
         {
-            StudentRepository s = new StudentRepository();
-
             DateTime currentTime = DateTime.Now;
             student.createdDateTime = currentTime;
             student.modifiedDateTime = currentTime;
 
             if (ModelState.IsValid)
-            {               
-                s.SaveModifiedRecords(db, student);
+            {
+                studentService.Update(student);
                 
                 return RedirectToAction("Student", "Default");
             }

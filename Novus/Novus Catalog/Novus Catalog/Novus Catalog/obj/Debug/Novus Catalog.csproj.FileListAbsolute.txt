@@ -463,3 +463,80 @@ C:\Users\Admin\Documents\sandbox-repository\sandbox-repository\Novus\Novus Catal
 C:\Users\Admin\Documents\sandbox-repository\sandbox-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\obj\Debug\Novus Ca.4A319CE6.Up2Date
 C:\Users\Admin\Documents\sandbox-repository\sandbox-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\obj\Debug\Novus Catalog.dll
 C:\Users\Admin\Documents\sandbox-repository\sandbox-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\obj\Debug\Novus Catalog.pdb
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\ApplicationInsights.config
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\Novus Catalog.dll.config
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\Novus Catalog.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\Novus Catalog.pdb
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\csc.exe
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\csc.exe.config
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\csc.rsp
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\csi.exe
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\csi.exe.config
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\csi.rsp
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\System.Buffers.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\System.Memory.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\vbc.exe
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\vbc.exe.config
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\vbc.rsp
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\ClosedXML.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\ClosedXML.Parser.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\DocumentFormat.OpenXml.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\DocumentFormat.OpenXml.Framework.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\EntityFramework.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\ExcelNumberFormat.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\Microsoft.Bcl.HashCode.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\RBush.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\SendGrid.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\SixLabors.Fonts.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\StarkbankEcdsa.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\System.Buffers.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\System.Memory.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\System.Numerics.Vectors.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\ClosedXML.pdb
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\ClosedXML.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\ClosedXML.Parser.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\DocumentFormat.OpenXml.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\DocumentFormat.OpenXml.Framework.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\EntityFramework.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\ExcelNumberFormat.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\Microsoft.Bcl.HashCode.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\RBush.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\SendGrid.pdb
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\SendGrid.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\SixLabors.Fonts.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\System.Buffers.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\System.Memory.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\System.Numerics.Vectors.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\obj\Debug\Novus Catalog.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\obj\Debug\Novus Catalog.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\obj\Debug\Novus Ca.4A319CE6.Up2Date
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\obj\Debug\Novus Catalog.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\Novus Catalog\obj\Debug\Novus Catalog.pdb

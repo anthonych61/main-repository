@@ -34,11 +34,42 @@ namespace Novus_Catalog.Repository
         }
 
         // saveds any records that have been changed
-        public void SaveModifiedRecords(NovusContext db, Students student)
+        public void Update(Students student)
         {
             db.Entry(student).State = EntityState.Modified;
             db.Entry(student).Property(x => x.createdDateTime).IsModified = false;
             db.SaveChanges();
+        }
+
+        public Students FindById(int? id)
+        {
+            return db.Students.Where(s => s.sid == id).FirstOrDefault();
+        }
+        public Students Find(int? id)
+        {
+            return db.Students.Find(id);
+        }
+
+        // delete record(s)
+        public void RemoveRecords(int[] a)
+        {
+            for (int i = 0; i <= a.Length - 1; i++)
+            {
+                Students student = db.Students.Find(a[i]);
+                db.Students.Remove(student);
+                db.SaveChanges();
+            }
+        }
+
+        public void MoveOldRecords(int[] a)
+        {
+            for (int i = 0; i <= a.Length - 1; i++)
+            {
+                Students student = db.Students.Find(a[i]);
+                Students_Deleted oldRecords = Utils.Helper.MoveToDeletedRecords(student);
+                db.Students_Deleted.Add(oldRecords);
+                db.SaveChanges();
+            }
         }
     }
 }

@@ -12,7 +12,11 @@ namespace Novus_Catalog.Repository
     {
         List<Students> FindAll();
         void Save(Students student);
-        void SaveModifiedRecords(NovusContext db, Students student);
+        void Update(Students student);
+        Students FindById(int? id);
+        Students Find(int? id);
+        void RemoveRecords(int[] a);
+        void MoveOldRecords(int[] a);
 
     }
 }
