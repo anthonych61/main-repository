@@ -14,6 +14,18 @@ namespace Novus_Catalog.Controllers
 {
     public class UserController : Controller
     {
+        private readonly IUserService _service;
+
+        public UserController()
+        {
+            var repo = new UserRepository(); // or mock for testing
+            _service = new UserService(repo);
+        }
+
+        public UserController(IUserService service)
+        {
+            _service = service;
+        }
         [HttpPost]
         public ActionResult User()
         {
@@ -29,7 +41,6 @@ namespace Novus_Catalog.Controllers
         public ActionResult Edit([Bind(Include = "oldMentorPwd, newMentorPwd, oldAdminPwd, newAdminPwd")] Users usr)
         {
             Boolean hasErrors = false;
-            UserService userService = new UserService();
 
             // check if any fields are blank
             if (String.IsNullOrEmpty(usr.oldMentorPwd) || String.IsNullOrEmpty(usr.newMentorPwd) || String.IsNullOrEmpty(usr.oldAdminPwd) || String.IsNullOrEmpty(usr.newAdminPwd))
@@ -39,7 +50,7 @@ namespace Novus_Catalog.Controllers
 
             if (!String.IsNullOrEmpty(usr.oldMentorPwd) && !String.IsNullOrEmpty(usr.newMentorPwd)) 
             {
-                var mentorModifiedPwd = userService.ChangeUserPassword("Mentor", usr.oldMentorPwd, usr.newMentorPwd);
+                var mentorModifiedPwd = _service.ChangeUserPassword("Mentor", usr.oldMentorPwd, usr.newMentorPwd);
 
                 if ( mentorModifiedPwd == 0)
                 {
@@ -52,7 +63,7 @@ namespace Novus_Catalog.Controllers
 
             if (!String.IsNullOrEmpty(usr.oldAdminPwd) && !String.IsNullOrEmpty(usr.newAdminPwd))
             {
-                var adminModifiedPwd = userService.ChangeUserPassword("Administrator", usr.oldAdminPwd, usr.newAdminPwd);
+                var adminModifiedPwd = _service.ChangeUserPassword("Administrator", usr.oldAdminPwd, usr.newAdminPwd);
 
                 if (adminModifiedPwd == 0)
                 {

@@ -13,7 +13,18 @@ namespace Novus_Catalog.Controllers
 {
     public class EditController : Controller
     {
-        StudentService studentService = new StudentService();
+        private readonly IStudentService _service;
+
+        public EditController()
+        {
+            var repo = new StudentRepository(); // or mock for testing
+            _service = new StudentService(repo);
+        }
+
+        public EditController(IStudentService service)
+        {
+            _service = service;
+        }
 
         [HttpPost]
         public ActionResult User()
@@ -27,14 +38,14 @@ namespace Novus_Catalog.Controllers
         /// </summary>
         public ActionResult Student(int? id)
         {
-            var std = studentService.FindById(id);
+            var std = _service.FindById(id);
 
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            Students student = studentService.Find(id);
+            Students student = _service.Find(id);
 
             if (student == null)
             {
@@ -55,7 +66,7 @@ namespace Novus_Catalog.Controllers
 
             if (ModelState.IsValid)
             {
-                studentService.Update(student);
+                _service.Update(student);
                 
                 return RedirectToAction("Student", "Default");
             }

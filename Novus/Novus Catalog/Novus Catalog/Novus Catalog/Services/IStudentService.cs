@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Novus_Catalog.Services
 {
-    internal interface IStudentService
+    public interface IStudentService
     {
         List<Students> GetStudentRecords();
         void Save(Students student);

@@ -10,21 +10,32 @@ namespace Novus_Catalog.Controllers
 {
     public class RemoveController : Controller
     {
+        private readonly IStudentService _service;
+
+        public RemoveController()
+        {
+            var repo = new StudentRepository(); // or mock for testing
+            _service = new StudentService(repo);
+        }
+
+        public RemoveController(IStudentService service)
+        {
+            _service = service;
+        }
+
         /// <summary>
         /// A function of the database web application that will allow mentors and adminstrators
         /// of the system to remove student records from the system
         /// </summary>
         public JsonResult Delete(string id) 
         {
-            StudentService studentService = new StudentService();
-
             var item = id.Split(',').Select(int.Parse).ToArray();
 
             // move records to students_deleted
-            studentService.MoveOldRecords(item);
+            _service.MoveOldRecords(item);
 
             // delete records
-            studentService.Delete(item);  
+            _service.Delete(item);  
 
             return Json(new { redirectToUrl = Url.Action("Student", "Default") });
         }

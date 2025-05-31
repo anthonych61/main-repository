@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NovusCatalogTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69890fa2a9eea9b2e1899c82fb3f0c6a9893980c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3245fda36fbf9036f0d8e9a7f09cbdfe7c79fc63")]
 [assembly: System.Reflection.AssemblyProductAttribute("NovusCatalogTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NovusCatalogTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

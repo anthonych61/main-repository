@@ -1,6 +1,7 @@
 ﻿using ClosedXML.Excel;
 using Novus_Catalog.DAL;
 using Novus_Catalog.Models;
+using Novus_Catalog.Repository;
 using Novus_Catalog.Services;
 using System;
 using System.Data;
@@ -12,7 +13,18 @@ namespace Novus_Catalog.Controllers
 {
     public class ReportController : Controller
     {
-        StudentService studentService = new StudentService();
+        private readonly IStudentService _service;
+
+        public ReportController()
+        {
+            var repo = new StudentRepository(); // or mock for testing
+            _service = new StudentService(repo);
+        }
+
+        public ReportController(IStudentService service)
+        {
+            _service = service;
+        }
 
         /// <summary>
         /// A function that will allow administrative users to export 
@@ -30,7 +42,7 @@ namespace Novus_Catalog.Controllers
                         new DataColumn("PLastname"), new DataColumn("PhoneNumber"), new DataColumn("DateEnrollment"), 
                         new DataColumn("Attendance") });
 
-            var students = from student in studentService.GetStudentRecords()
+            var students = from student in _service.GetStudentRecords()
                            where item.Contains(student.sid)
                            select student;
 

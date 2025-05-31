@@ -11,6 +11,20 @@ namespace Novus_Catalog.Controllers
 {
     public class CreateController : Controller
     {
+        private readonly IStudentService _service;
+
+        public CreateController()
+        {
+            var repo = new StudentRepository(); // or mock for testing
+            _service = new StudentService(repo);
+
+        }
+
+        public CreateController(IStudentService service)
+        {
+            _service = service;
+        }
+
         [HttpPost]
         public ActionResult User()
         {
@@ -30,7 +44,6 @@ namespace Novus_Catalog.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Student([Bind(Include = "null, sfirstname, slastname, gender, address, city, department, school, pfirstname, plastname, phoneNumber, dateEnrolled, attendance, createdDateTime, modifiedDateTime")]Students student)
         {
-            StudentService studentService = new StudentService();
 
             DateTime currentTime = DateTime.Now;
             student.createdDateTime = currentTime;
@@ -41,7 +54,7 @@ namespace Novus_Catalog.Controllers
 
                 if (ModelState.IsValid)
                 {                   
-                    studentService.Save(student);
+                    _service.Save(student);
 
                     return RedirectToAction("Student", "Default");
                 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Novus_Catalog.Repository
 {
-    internal interface IStudentRepository
+    public interface IStudentRepository
     {
         List<Students> FindAll();
         void Save(Students student);

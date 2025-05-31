@@ -7,6 +7,19 @@ namespace Novus_Catalog.Controllers
 {
     public class LoginController : Controller
     {
+        private readonly IUserService _service;
+
+        public LoginController()
+        {
+            var repo = new UserRepository(); // or mock for testing
+            _service = new UserService(repo);
+        }
+
+        public LoginController(IUserService service)
+        {
+            _service = service;
+        }
+
         public ActionResult User()
         {
             return View();
@@ -16,9 +29,7 @@ namespace Novus_Catalog.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult User(Users objUser)
         {
-            UserService userService = new UserService();
-
-            var found = userService.UserExistsByAccountAndPassword(objUser.account, objUser.password);
+            var found = _service.UserExistsByAccountAndPassword(objUser.account, objUser.password);
 
             if (found)
             {

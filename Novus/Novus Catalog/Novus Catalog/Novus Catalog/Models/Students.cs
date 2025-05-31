@@ -8,7 +8,7 @@ using System.Web;
 namespace Novus_Catalog.Models
 {
     public class Students
-    {
+    {       
         [Key]
         public int sid { get; set; }
 
@@ -56,5 +56,26 @@ namespace Novus_Catalog.Models
 
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "0:yyyy-MM-ddTHH:mm:ss:zzz}")]
         public DateTime modifiedDateTime { get; set; }
+
+        public Students() {}
+        public Students(int sid, string sfirstname, string slastname, string gender, string address, string city, string department, string school, string pfirstname, string plastname, string dateEnrolled, string phoneNumber, string attendance, DateTime createdDateTime, DateTime modifiedDateTime)
+        {
+            this.sid = sid;
+            this.sfirstname = sfirstname;
+            this.slastname = slastname;
+            this.gender = gender;
+            this.address = address;
+            this.city = city;
+            this.department = department;
+            this.school = school;
+            this.pfirstname = pfirstname;
+            this.plastname = plastname;
+            this.dateEnrolled = dateEnrolled;
+            this.phoneNumber = phoneNumber;
+            this.attendance = attendance;
+            this.createdDateTime = createdDateTime;
+            this.modifiedDateTime = modifiedDateTime;
+        }
+
     }
 }

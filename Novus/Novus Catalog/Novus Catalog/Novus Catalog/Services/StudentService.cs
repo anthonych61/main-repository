@@ -9,37 +9,41 @@ namespace Novus_Catalog.Services
 {
     public class StudentService : IStudentService
     {
-        StudentRepository studentRepository = new StudentRepository();
+        private readonly IStudentRepository _repository;
 
+        public StudentService(IStudentRepository repository)
+        {
+            _repository = repository;
+        }
         public List<Students> GetStudentRecords()
         {
-            return studentRepository.FindAll();
+            return _repository.FindAll();
         }
         public void Save(Students student)
         {
-            studentRepository.Save(student);
+            _repository.Save(student);
         }
         public void Update(Students student)
         {
-            studentRepository.Update(student);
+            _repository.Update(student);
         }
         public Students FindById(int? id)
         {
-            return studentRepository.FindById(id);
+            return _repository.FindById(id);
         }
         public Students Find(int? id)
         {
-            return studentRepository.Find(id);
+            return _repository.Find(id);
         }
 
         public void Delete(int[] removedItems) 
         {
-            studentRepository.RemoveRecords(removedItems);
+            _repository.RemoveRecords(removedItems);
         }
 
         public void MoveOldRecords(int[] recordItems)
         {
-            studentRepository.MoveOldRecords(recordItems);
+            _repository.MoveOldRecords(recordItems);
         }
     }
 }
