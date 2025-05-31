@@ -29,7 +29,6 @@ namespace Novus_Catalog.Controllers
         public ActionResult Edit([Bind(Include = "oldMentorPwd, newMentorPwd, oldAdminPwd, newAdminPwd")] Users usr)
         {
             Boolean hasErrors = false;
-            UserRepository user = new UserRepository();
             UserService userService = new UserService();
 
             // check if any fields are blank
