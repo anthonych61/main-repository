@@ -221,6 +221,7 @@
     <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="Services\IStudentService.cs" />
     <Compile Include="Services\StudentService.cs" />
+    <Compile Include="Services\UserService.cs" />
     <Compile Include="Utils\Helper.cs" />
   </ItemGroup>
   <ItemGroup>

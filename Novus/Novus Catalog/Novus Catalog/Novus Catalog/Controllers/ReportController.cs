@@ -1,6 +1,7 @@
 ﻿using ClosedXML.Excel;
 using Novus_Catalog.DAL;
 using Novus_Catalog.Models;
+using Novus_Catalog.Services;
 using System;
 using System.Data;
 using System.IO;
@@ -11,7 +12,7 @@ namespace Novus_Catalog.Controllers
 {
     public class ReportController : Controller
     {
-        private NovusContext db = new NovusContext();
+        StudentService studentService = new StudentService();
 
         /// <summary>
         /// A function that will allow administrative users to export 
@@ -29,7 +30,7 @@ namespace Novus_Catalog.Controllers
                         new DataColumn("PLastname"), new DataColumn("PhoneNumber"), new DataColumn("DateEnrollment"), 
                         new DataColumn("Attendance") });
 
-            var students = from student in db.Students
+            var students = from student in studentService.GetStudentRecords()
                            where item.Contains(student.sid)
                            select student;
 

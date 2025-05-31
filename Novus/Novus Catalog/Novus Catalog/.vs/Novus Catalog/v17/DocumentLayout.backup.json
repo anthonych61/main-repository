@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|solutionrelative:novus catalog\\views\\login\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|c:\\users\\admin\\documents\\main-repository\\main-repository\\novus\\novus catalog\\novus catalog\\novus catalog\\services\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|solutionrelative:novus catalog\\services\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|c:\\users\\admin\\documents\\main-repository\\main-repository\\novus\\novus catalog\\novus catalog\\novus catalog\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|solutionrelative:novus catalog\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\novus catalog\\repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|solutionrelative:novus catalog\\repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\novus catalog\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,20 +23,16 @@
       "RelativeMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|solutionrelative:novus catalog\\repository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\novus catalog\\repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|solutionrelative:novus catalog\\repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|c:\\users\\admin\\documents\\main-repository\\main-repository\\novus\\novus catalog\\novus catalog\\novus catalog\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|solutionrelative:novus catalog\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|c:\\users\\admin\\documents\\main-repository\\main-repository\\novus\\novus catalog\\novus catalog\\novus catalog\\controllers\\editcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|solutionrelative:novus catalog\\controllers\\editcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\novus catalog\\services\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|solutionrelative:novus catalog\\services\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|c:\\users\\admin\\documents\\main-repository\\main-repository\\novus\\novus catalog\\novus catalog\\novus catalog\\controllers\\createcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|solutionrelative:novus catalog\\controllers\\createcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|c:\\users\\admin\\documents\\main-repository\\main-repository\\novus\\novus catalog\\novus catalog\\novus catalog\\controllers\\removecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|solutionrelative:novus catalog\\controllers\\removecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|c:\\users\\admin\\documents\\main-repository\\main-repository\\novus\\novus catalog\\novus catalog\\novus catalog\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{928C8781-ACF2-4F51-BBF1-89874EE51DA5}|Novus Catalog\\Novus Catalog.csproj|solutionrelative:novus catalog\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,53 +42,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Controllers\\CreateController.cs",
-              "RelativeDocumentMoniker": "Novus Catalog\\Controllers\\CreateController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Controllers\\CreateController.cs",
-              "RelativeToolTip": "Novus Catalog\\Controllers\\CreateController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T21:13:17.425Z",
+              "DocumentIndex": 0,
+              "Title": "User.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Views\\Login\\User.cshtml",
+              "RelativeDocumentMoniker": "Novus Catalog\\Views\\Login\\User.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Views\\Login\\User.cshtml",
+              "RelativeToolTip": "Novus Catalog\\Views\\Login\\User.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T21:43:24.142Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "RemoveController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Controllers\\RemoveController.cs",
-              "RelativeDocumentMoniker": "Novus Catalog\\Controllers\\RemoveController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Controllers\\RemoveController.cs",
-              "RelativeToolTip": "Novus Catalog\\Controllers\\RemoveController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAADwvwsAAAAFAAAAAAAAAA==",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Novus Catalog\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Novus Catalog\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T21:52:57.058Z",
+              "WhenOpened": "2025-05-30T22:40:33.87Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "EditController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Controllers\\EditController.cs",
-              "RelativeDocumentMoniker": "Novus Catalog\\Controllers\\EditController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Controllers\\EditController.cs",
-              "RelativeToolTip": "Novus Catalog\\Controllers\\EditController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Novus Catalog\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Novus Catalog\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T21:04:20.575Z",
+              "WhenOpened": "2025-05-30T22:43:49.439Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Services\\IStudentService.cs",
+              "RelativeDocumentMoniker": "Novus Catalog\\Services\\IStudentService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Services\\IStudentService.cs",
+              "RelativeToolTip": "Novus Catalog\\Services\\IStudentService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T22:21:56.442Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "Novus Catalog\\Services\\StudentService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Services\\StudentService.cs",
+              "RelativeToolTip": "Novus Catalog\\Services\\StudentService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T17:40:37.675Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "IStudentRepository.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Repository\\IStudentRepository.cs",
               "RelativeDocumentMoniker": "Novus Catalog\\Repository\\IStudentRepository.cs",
@@ -102,43 +130,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "StudentRepository.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Repository\\StudentRepository.cs",
               "RelativeDocumentMoniker": "Novus Catalog\\Repository\\StudentRepository.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Repository\\StudentRepository.cs",
               "RelativeToolTip": "Novus Catalog\\Repository\\StudentRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAIBBwD8AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAqwEgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T07:54:07.709Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Services\\StudentService.cs",
-              "RelativeDocumentMoniker": "Novus Catalog\\Services\\StudentService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Services\\StudentService.cs",
-              "RelativeToolTip": "Novus Catalog\\Services\\StudentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:40:37.675Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IStudentService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Services\\IStudentService.cs",
-              "RelativeDocumentMoniker": "Novus Catalog\\Services\\IStudentService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Services\\IStudentService.cs",
-              "RelativeToolTip": "Novus Catalog\\Services\\IStudentService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T22:21:56.442Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -156,15 +156,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "User.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Views\\Login\\User.cshtml",
-              "RelativeDocumentMoniker": "Novus Catalog\\Views\\Login\\User.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Views\\Login\\User.cshtml",
-              "RelativeToolTip": "Novus Catalog\\Views\\Login\\User.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T21:43:24.142Z",
+              "DocumentIndex": 1,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "Novus Catalog\\Controllers\\ReportController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\main-repository\\main-repository\\Novus\\Novus Catalog\\Novus Catalog\\Novus Catalog\\Controllers\\ReportController.cs",
+              "RelativeToolTip": "Novus Catalog\\Controllers\\ReportController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T22:42:30.644Z",
               "EditorCaption": ""
             }
           ]

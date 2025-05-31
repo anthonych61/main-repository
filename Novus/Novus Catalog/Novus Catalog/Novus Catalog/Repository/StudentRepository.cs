@@ -2,7 +2,9 @@
 using Novus_Catalog.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls;
@@ -40,16 +42,6 @@ namespace Novus_Catalog.Repository
             db.Entry(student).Property(x => x.createdDateTime).IsModified = false;
             db.SaveChanges();
         }
-
-        public Students FindById(int? id)
-        {
-            return db.Students.Where(s => s.sid == id).FirstOrDefault();
-        }
-        public Students Find(int? id)
-        {
-            return db.Students.Find(id);
-        }
-
         // delete record(s)
         public void RemoveRecords(int[] a)
         {
@@ -71,5 +63,14 @@ namespace Novus_Catalog.Repository
                 db.SaveChanges();
             }
         }
+        public Students FindById(int? id)
+        {
+            return db.Students.Where(s => s.sid == id).FirstOrDefault();
+        }
+        public Students Find(int? id)
+        {
+            return db.Students.Find(id);
+        }
+
     }
 }
