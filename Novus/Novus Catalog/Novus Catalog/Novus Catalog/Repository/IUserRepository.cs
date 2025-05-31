@@ -8,8 +8,8 @@ namespace Novus_Catalog.Repository
 {
     public interface IUserRepository
     {
-        bool validateID(string account, string password);
-        int ChangePassword(string accountName, string oldpassword, string newpassword);
+        bool CheckUserPassword(string account, string password);
+        int CheckUserPassword(string accountName, string oldpassword, string newpassword);
 
     }
 }

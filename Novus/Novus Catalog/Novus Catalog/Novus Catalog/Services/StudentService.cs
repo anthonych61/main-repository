@@ -9,7 +9,7 @@ namespace Novus_Catalog.Services
 {
     public class StudentService : IStudentService
     {
-        private StudentRepository studentRepository = new StudentRepository();
+        StudentRepository studentRepository = new StudentRepository();
 
         public List<Students> GetStudentRecords()
         {

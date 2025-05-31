@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 using Novus_Catalog.Models;
 using Novus_Catalog.Repository;
+using Novus_Catalog.Services;
 
 namespace Novus_Catalog.Controllers
 {
@@ -15,8 +16,9 @@ namespace Novus_Catalog.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult User(Users objUser)
         {
-            UserRepository user = new UserRepository();
-            var found = user.validateID(objUser.account, objUser.password);
+            UserService userService = new UserService();
+
+            var found = userService.UserExistsByAccountAndPassword(objUser.account, objUser.password);
 
             if (found)
             {

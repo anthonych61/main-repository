@@ -12,7 +12,7 @@ namespace Novus_Catalog.Repository
 {
     public class UserRepository : IUserRepository
     {
-        public bool validateID(string account, string password)
+        public bool CheckUserPassword(string account, string password)
         {
             var rowsReturned = 0;
 
@@ -30,7 +30,7 @@ namespace Novus_Catalog.Repository
 
         }
 
-        public int ChangePassword(string accountName, string oldpassword, string newpassword)
+        public int CheckUserPassword(string accountName, string oldpassword, string newpassword)
         {
             var storedProcedureName = "usp_UpdateUserPassword";
             var constr = ConfigurationManager.ConnectionStrings["NovusContext"].ConnectionString;

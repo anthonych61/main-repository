@@ -1,5 +1,6 @@
 ﻿using Novus_Catalog.Models;
 using Novus_Catalog.Repository;
+using Novus_Catalog.Services;
 using Novus_Catalog.Utils;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,7 @@ namespace Novus_Catalog.Controllers
         {
             Boolean hasErrors = false;
             UserRepository user = new UserRepository();
+            UserService userService = new UserService();
 
             // check if any fields are blank
             if (String.IsNullOrEmpty(usr.oldMentorPwd) || String.IsNullOrEmpty(usr.newMentorPwd) || String.IsNullOrEmpty(usr.oldAdminPwd) || String.IsNullOrEmpty(usr.newAdminPwd))
@@ -38,7 +40,7 @@ namespace Novus_Catalog.Controllers
 
             if (!String.IsNullOrEmpty(usr.oldMentorPwd) && !String.IsNullOrEmpty(usr.newMentorPwd)) 
             {
-                var mentorModifiedPwd = user.ChangePassword("Mentor", usr.oldMentorPwd, usr.newMentorPwd);
+                var mentorModifiedPwd = userService.ChangeUserPassword("Mentor", usr.oldMentorPwd, usr.newMentorPwd);
 
                 if ( mentorModifiedPwd == 0)
                 {
@@ -51,7 +53,7 @@ namespace Novus_Catalog.Controllers
 
             if (!String.IsNullOrEmpty(usr.oldAdminPwd) && !String.IsNullOrEmpty(usr.newAdminPwd))
             {
-                var adminModifiedPwd = user.ChangePassword("Administrator", usr.oldAdminPwd, usr.newAdminPwd);
+                var adminModifiedPwd = userService.ChangeUserPassword("Administrator", usr.oldAdminPwd, usr.newAdminPwd);
 
                 if (adminModifiedPwd == 0)
                 {
