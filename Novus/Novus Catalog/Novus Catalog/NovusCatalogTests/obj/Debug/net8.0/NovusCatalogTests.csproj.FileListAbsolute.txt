@@ -394,9 +394,9 @@ C:\Users\Admin\Documents\sandbox-repository\sandbox-repository\Novus\Novus Catal
 C:\Users\Admin\Documents\sandbox-repository\sandbox-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\obj\Debug\net8.0\NovusCatalogTests.pdb
 C:\Users\Admin\Documents\sandbox-repository\sandbox-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\obj\Debug\net8.0\NovusCatalogTests.genruntimeconfig.cache
 C:\Users\Admin\Documents\sandbox-repository\sandbox-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\obj\Debug\net8.0\ref\NovusCatalogTests.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\testhost.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\ApplicationInsights.config
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\testhost.exe
-C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\testhost.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Microsoft.TestPlatform.AdapterUtilities.dll
@@ -404,6 +404,7 @@ C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Nov
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\NovusCatalogTests.runtimeconfig.json
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\NovusCatalogTests.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\NovusCatalogTests.pdb
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Microsoft.ApplicationInsights.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Microsoft.Testing.Extensions.Telemetry.dll
@@ -418,8 +419,11 @@ C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Nov
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Moq.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\NodaTime.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\cs\Microsoft.Testing.Extensions.Telemetry.resources.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\de\Microsoft.Testing.Extensions.Telemetry.resources.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\es\Microsoft.Testing.Extensions.Telemetry.resources.dll
@@ -550,6 +554,8 @@ C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Nov
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Novus Catalog.dll
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\System.Web.Optimization.dll
@@ -592,9 +598,3 @@ C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Nov
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\obj\Debug\net8.0\NovusCatalogTests.pdb
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\obj\Debug\net8.0\NovusCatalogTests.genruntimeconfig.cache
 C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\obj\Debug\net8.0\ref\NovusCatalogTests.dll
-C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Castle.Core.dll
-C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\Moq.dll
-C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\NodaTime.dll
-C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
-C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
-C:\Users\Admin\Documents\main-repository\main-repository\Novus\Novus Catalog\Novus Catalog\NovusCatalogTests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll

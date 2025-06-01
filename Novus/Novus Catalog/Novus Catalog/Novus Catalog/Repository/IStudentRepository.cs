@@ -11,8 +11,8 @@ namespace Novus_Catalog.Repository
     public interface IStudentRepository
     {
         List<Students> FindAll();
-        void Save(Students student);
-        void Update(Students student);
+        Students Save(Students student);
+        Students Update(Students student);
         Students FindById(int? id);
         Students Find(int? id);
         void RemoveRecords(int[] a);

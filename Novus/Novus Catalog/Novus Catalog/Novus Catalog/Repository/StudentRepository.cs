@@ -34,18 +34,20 @@ namespace Novus_Catalog.Repository
         }
 
         // save record
-        public void Save(Students student)
+        public Students Save(Students student)
         {
             _context.Students.Add(student);
             _context.SaveChanges();
+            return student;
         }
 
         // saveds any records that have been changed
-        public void Update(Students student)
+        public Students Update(Students student)
         {
             _context.Entry(student).State = EntityState.Modified;
             _context.Entry(student).Property(x => x.createdDateTime).IsModified = false;
             _context.SaveChanges();
+            return student;
         }
         // delete record(s)
         public void RemoveRecords(int[] a)

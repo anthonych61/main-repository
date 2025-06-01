@@ -42,6 +42,70 @@ namespace NovusCatalogTests
             _studentRepository.Verify(repo => repo.FindAll(), Times.Once);
         }
 
+        [TestMethod]
+        public void TestAddStudentRecord()
+        { 
+            // aaa pattern
+            // arrange
+            DateTime currentDateTime = DateTime.Now;
+            var record = new Students {sid = 5, sfirstname = "test", slastname = "test", gender = "Male", address = "test", city = "test", department = "test", school = "test", pfirstname = "test", plastname = "test", phoneNumber = "(000) 000-0000", dateEnrolled = "04/23/2025", attendance = "Occasional", createdDateTime = currentDateTime, modifiedDateTime = currentDateTime };
 
+            // return the record when Add is called
+            _studentRepository.Setup(r => r.Save(record)).Returns(record);
+
+            // act
+            var savedRecord = _studentService.Save(record);
+
+            // assert
+            Assert.AreEqual(record, savedRecord);
+            _studentRepository.Verify(r => r.Save(record), Times.Once);
+        }
+
+        [TestMethod]
+        public void TestEditStudentRecord()
+        {
+            DateTime currentDate = DateTime.Now;
+            var existingRecord = new Students {sid = 5, sfirstname = "Mike", slastname = "Greene", gender = "Male",address = "202 Doberman Ave", city = "New York, NY", department = "Tarija",school = "Geneva High School", pfirstname = "Elizabeth", plastname = "Greene", phoneNumber = "(571) 431-9887", dateEnrolled = "04/23/2025", attendance = "Occasional", createdDateTime = currentDate, modifiedDateTime = currentDate };
+            var updatedRecord = new Students { sid = 5, sfirstname = "John", slastname = "Streitz", gender = "Male", address = "100 Meineke Ave", city = "New York, NY", department = "Tarija", school = "Edison High School", pfirstname = "Mary", plastname = "Streitz", phoneNumber = "(571) 233-9857", dateEnrolled = "04/13/2025", attendance = "Occasional", createdDateTime = currentDate, modifiedDateTime = currentDate };
+
+            // mock to find existing record
+            _studentRepository.Setup(r => r.FindById(5)).Returns(existingRecord);
+
+            // mock to save and return the updated record
+            _studentRepository.Setup(r => r.Update(updatedRecord)).Returns(updatedRecord);
+
+            // act
+            _studentService.FindById(5);    
+
+            var result = _studentService.Update(updatedRecord);
+
+            // assert
+            Assert.AreEqual(updatedRecord.sfirstname, result.sfirstname);
+            Assert.AreEqual(updatedRecord.slastname, result.slastname);
+
+            // verify findById called once
+            _studentRepository.Verify(r => r.FindById(5), Times.Once);
+
+            // verify update called once
+            _studentRepository.Verify(r => r.Update(updatedRecord), Times.Once);
+
+        }
+
+        [TestMethod]
+        public void TestDeleteStudentRecord()
+        {
+            // define an array of IDs to delete
+            int[] studentIds = {1};
+
+            // setup delete method 
+            _studentRepository.Setup(r => r.RemoveRecords(studentIds));
+
+            // act
+            _studentService.Delete(studentIds);
+
+            // verify that RemoveRecords was called for each ID exactly once
+            _studentRepository.Verify(r => r.RemoveRecords(studentIds), Times.Once);
+
+        }
     }
 }

@@ -11,8 +11,8 @@ namespace Novus_Catalog.Services
     public interface IStudentService
     {
         List<Students> GetStudentRecords();
-        void Save(Students student);
-        void Update(Students student);
+        Students Save(Students student);
+        Students Update(Students student);
         Students FindById(int? id);
         Students Find(int? id);
         void Delete(int[] removedItems);

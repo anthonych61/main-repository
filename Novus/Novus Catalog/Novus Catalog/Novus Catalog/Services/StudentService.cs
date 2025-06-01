@@ -19,17 +19,18 @@ namespace Novus_Catalog.Services
         {
             return _repository.FindAll();
         }
-        public void Save(Students student)
+        public Students Save(Students student)
         {
-            _repository.Save(student);
+            return _repository.Save(student);
         }
-        public void Update(Students student)
+        public Students Update(Students student)
         {
             _repository.Update(student);
+            return student;
         }
         public Students FindById(int? id)
-        {
-            return _repository.FindById(id);
+        {            
+            return _repository.FindById(id); 
         }
         public Students Find(int? id)
         {
