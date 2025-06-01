@@ -34,5 +34,13 @@ namespace Novus_Catalog.Models
         [Required(ErrorMessage = "Password required.")]
         public string newAdminPwd { get; set; }
 
+        public Users() { }
+
+        public Users(string account, string password)
+        {
+            this.account = account;
+            this.password = password;
+        }
+
     }
 }

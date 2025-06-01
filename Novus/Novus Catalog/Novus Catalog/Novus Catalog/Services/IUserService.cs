@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Novus_Catalog.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace Novus_Catalog.Services
     public interface IUserService
     {
         bool UserExistsByAccountAndPassword(string account, string password);
-        int ChangeUserPassword(string accountName, string oldpassword, string newpassword);
+        int ChangeUserPassword(Users user, string accountName, string oldpassword, string newpassword);
+        Users FindByAccount(String account);
     }
 }

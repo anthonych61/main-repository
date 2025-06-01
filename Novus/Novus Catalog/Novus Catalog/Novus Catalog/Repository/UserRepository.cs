@@ -7,11 +7,19 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
 using System.Web.Mvc;
+using Novus_Catalog.Models;
 
 namespace Novus_Catalog.Repository
 {
     public class UserRepository : IUserRepository
     {
+        private readonly NovusContext _context;
+
+        public UserRepository()
+        {
+            _context = new NovusContext();
+        }
+
         public bool CheckUserPassword(string account, string password)
         {
             var rowsReturned = 0;
@@ -60,6 +68,11 @@ namespace Novus_Catalog.Repository
 
             return Convert.ToInt32(returnValueParam.Value.ToString());
 
+        }
+
+        public Users FindByAccount(String account)
+        {
+            return _context.Users.Where(u => u.account == account).FirstOrDefault();
         }
     }
 }

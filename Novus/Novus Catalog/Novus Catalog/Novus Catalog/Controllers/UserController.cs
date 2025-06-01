@@ -50,7 +50,7 @@ namespace Novus_Catalog.Controllers
 
             if (!String.IsNullOrEmpty(usr.oldMentorPwd) && !String.IsNullOrEmpty(usr.newMentorPwd)) 
             {
-                var mentorModifiedPwd = _service.ChangeUserPassword("Mentor", usr.oldMentorPwd, usr.newMentorPwd);
+                var mentorModifiedPwd = _service.ChangeUserPassword(usr, "Mentor", usr.oldMentorPwd, usr.newMentorPwd);
 
                 if ( mentorModifiedPwd == 0)
                 {
@@ -63,7 +63,7 @@ namespace Novus_Catalog.Controllers
 
             if (!String.IsNullOrEmpty(usr.oldAdminPwd) && !String.IsNullOrEmpty(usr.newAdminPwd))
             {
-                var adminModifiedPwd = _service.ChangeUserPassword("Administrator", usr.oldAdminPwd, usr.newAdminPwd);
+                var adminModifiedPwd = _service.ChangeUserPassword(usr, "Administrator", usr.oldAdminPwd, usr.newAdminPwd);
 
                 if (adminModifiedPwd == 0)
                 {
