@@ -1,9 +1,19 @@
-﻿@{
+﻿@model IEnumerable<Novus_Catalog.Models.Students>
+@{
     Layout = "~/Views/Shared/_header.cshtml";
+    WebGrid webGrid = new WebGrid(source: Model, canSort: false, canPage: true, rowsPerPage: 10); 
 }
 
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+         /* CSS to center header text */
+        .center-header th:nth-child(6) {
+            text-align: center;
+        }   
+    </style>
+</head>
 <body>
     <div id="mobileButtons" class="row buttonDiv visible-phone">
         <div class="btn-group">
@@ -36,85 +46,42 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
+    <div id="recordTable" class="row hidden-phone">
+        <div class="span12">
+            @webGrid.GetHtml(
+            htmlAttributes: new { @id = "WebGrid", @class = "table pull-center table-striped table-bordered center-header" },
+            // Checkbox
+            columns: webGrid.Columns(
+                webGrid.Column(
+                    header: "",
+                    format: item => Html.Raw(
+                        "<input type='checkbox' class='desktopCheckbox centerCol' " +
+                        "name='student_D_" + item.sid + "' " +
+                        "id='student_D_" + item.sid + "' " +
+                        "value='" + item.sid + "' " +
+                        "onclick='checkAction(this," + item.sid + ");' />"
+                    ), style: "centerCol"
+                ),
+                webGrid.Column(
+                    header: "Name",
+                    format: item => item.sfirstname + " " + item.slastname
+                ),
+                webGrid.Column("gender", "Gender"),
+                webGrid.Column("dateEnrolled", "Date Enrolled"),
+                webGrid.Column("attendance", "Attends"),
+                // Edit Button
+                webGrid.Column(
+                    header: "Edit",
+                    format: item => Html.Raw(
+                        "<button class='btn btn-custom centerCol' " +
+                        "onclick=\"location.href='" + Url.Action("Student", "Edit", new { id = item.sid }) + "'\">" +
+                        "<i class='icon-pencil icon-white'></i> Edit</button>"
+                    ), style: "centerCol")
 
-    <div id='recordTable' class='row hidden-phone'>
-        <div class='span12'>
-            <table class='table pull-center table-striped table-bordered'>
-                <tr>
-                    <th></th>
-                    <th>Name</th>
-                    <th>Gender</th>
-                    <th>Date Enrolled</th>
-                    <th>Attends</th>
-                    <th class='centerCol'>Edit</th>
-                </tr>
-                @foreach (var d in Model)
-                {
-                    <tr>
-                        <td class='centerCol'>
-                            <input type='checkbox' class='desktopCheckbox' name='student_D_@d.sid'
-                                   id='student_D_@d.sid' value='@d.sid' onclick='checkAction(this,@d.sid);' />
-                        </td>
-                        <td>@d.sfirstname @d.slastname</td>
-                        <td>@d.gender</td>
-                        <td>@d.dateEnrolled</td>
-                        <td>@d.attendance</td>
-                        <td class='centerCol'>
-                            <button class='btn btn-custom centerCol' onclick="location.href='@Url.Action("Student", "Edit", new { id = @d.sid })'">
-                                <i class='icon-pencil icon-white'></i> Edit
-                            </button>
-                        </td>
-                    </tr>
-                }
-
-            </table>
-        </div>
-    </div>
-
-    <div id='recordTableMobile' class='row visible-phone'>
-        <div class='span12'>
-            <table class='table table-striped table-bordered'>
-                <tr>
-                    <th class='centerCol'>Select</th>
-                    <th>Student</th>
-                    <th class='centerCol'>Edit</th>
-                </tr>
-                @foreach (var d in Model)
-                {
-                    <tr>
-                        <td class='centerCol'>
-                            <input type='checkbox' class='mobileCheckbox' name='student_M_@d.sid'
-                                   id='student_M_@d.sid' value='@d.sid' onclick='checkAction(this,@d.sid);' />
-                        </td>
-                        <td>
-                            <p>
-                                <b>Name</b><br />
-                                @d.sfirstname @d.slastname
-                            </p>
-                            <p>
-                                <b>Gender</b><br />
-                                @d.gender
-                            </p>
-                            <p>
-                                <b>Enrolled</b><br />
-                                @d.dateEnrolled
-                            </p>
-                            <p>
-                                <b>Attendance</b><br />
-                                @d.attendance
-                            </p>
-                        </td>
-                        <td class='centerCol'>
-                            <button class='btn btn-custom centerCol' onclick="location.href='@Url.Action("Student", "Edit", new { id = @d.sid })'">
-                                <i class='icon-pencil icon-white'></i> Edit
-                            </button>
-                        </td>
-                    </tr>
-                }
-            </table>
+                )
+            )
         </div>
     </div>
 </body>
 </html>
-

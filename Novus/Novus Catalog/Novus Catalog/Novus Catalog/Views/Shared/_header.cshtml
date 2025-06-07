@@ -66,6 +66,10 @@
                         window.location.href = response.redirectToUrl;
                     }, complete: function () {
                         $("#deleteStudentModal").modal("hide");
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.error("Error:", textStatus, errorThrown);
+                        alert("An error occurred: " + textStatus); // handle errors
                     }
                 });
                 console.log("The delete completed");
@@ -84,8 +88,18 @@
                         if (result == "Success") {
                             location.href = '@Url.Action("DownloadFile","Report")';
                         }
+                    }, complete: function () {
+                        uncheckAll();
+                        $("#deleteDesktop").attr("disabled", "disabled");
+                        $("#reportDesktop").attr("disabled", "disabled");
+                        $("#studentReportModal").modal("hide");
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.error("Error:", textStatus, errorThrown);
+                        alert("An error occurred: " + textStatus); // handle errors
                     }
                 });
+                actionArray.length = 0;
                 console.log("The export completed");
             }
 
@@ -119,6 +133,10 @@
                 }
                 toggleControls();
                 console.log("-----checkAction() end -----\n");
+            }
+
+            function uncheckAll() {
+                $('input[type="checkbox"]').prop('checked', false);
             }
 
             function toggleControls() {
